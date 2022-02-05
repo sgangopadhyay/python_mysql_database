@@ -1,6 +1,11 @@
 # Program to create a INSERT data into a table
 import pymysql
-db = pymysql.connect("localhost", "root", "suman", "food");
+db =db = pymysql.connect(
+            host="localhost",
+            user="root",
+            password="suman",
+            db="guvi"
+        )
 c = db.cursor();
 sql = """SELECT * FROM food_name"""
 try:
