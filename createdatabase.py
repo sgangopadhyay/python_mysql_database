@@ -1,7 +1,12 @@
 # Program to create a new database
 import pymysql
 try:
-    db = pymysql.connect("localhost", "root", "suman");
+    db = db = pymysql.connect(
+            host="localhost",
+            user="root",
+            password="suman",
+            db="guvi"
+        )
     c = db.cursor();
     print("Database Connection Successfull");
     sql = """CREATE DATABASE food"""
