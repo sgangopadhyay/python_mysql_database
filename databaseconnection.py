@@ -1,7 +1,12 @@
 # Program to connect to a MySQL database
 import pymysql
 try:
-    db = pymysql.connect("localhost", "root", "suman", "food");
+    db = db = pymysql.connect(
+            host="localhost",
+            user="root",
+            password="suman",
+            db="guvi"
+        )
     cursor = db.cursor();
     print("Database Connection Successfull");
     db.close();
